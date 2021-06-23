@@ -1,6 +1,14 @@
-// Place all the styles related to the questions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// // Place all the styles related to the questions controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  padding: 0 24px;
+}
 
 
 .container {
@@ -12,19 +20,19 @@
 
 h1,h2 {
   text-align: center;
-  font : 2em "typewriter", monospace;
+  font-weight: 400;
 }
 
 p {
   text-align: center;
   font : 1em "typewriter", monospace;
-  color: 7e7474;
+  color: #7e7474;
 }
 
 
 .btn {
   padding      : 5px;
-  font         : bold .6em sans-serif;
+  font         : bold .6em Roboto;
   border       : 2px solid #333;
   border-radius: 5px;
   background   : none;
@@ -41,11 +49,27 @@ p {
 }
 
 .question {
-  font    : 1.4em/1.5em "handwriting", cursive, sans-serif;
+  font    : 1.1em/1.2em Roboto;
   border  : none;
   padding : 0 10px;
   margin  : 0;
   width   : 80%;
-  background   : rgba(0,0,0,.1);
+  background: lightyellow;
   border-radius: 5px;
 }
+
+blockquote {
+  border-left: 6px solid #ddd;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+
+  &.coach {
+    background-color: lightyellow;
+    p { font-weight: 400; }
+  }
+}
+
+cite:before {
+  content: "—"
+}
+
